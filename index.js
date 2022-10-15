@@ -1,5 +1,8 @@
 var express = require("express");
 var app = express();
+
+const PORT = process.env.PORT || 8877;
+
 var { autor } = require("./models");
 var { livro } = require("./models")
 
@@ -123,9 +126,9 @@ app.get("/livro/:id/autor", async function(req, res) {
 
 });
 
-app.listen(8877, function() {
+app.listen(PORT, function() {
 
-  console.log("O servidor está funcionando!!!!")
+  console.log("O servidor está funcionando na porta" + PORT)
 
 });
 
