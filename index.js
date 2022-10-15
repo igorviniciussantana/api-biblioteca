@@ -13,7 +13,7 @@ app.use(express.urlencoded({
 
 app.get("/", async function(req, res) {
 
-res.write('<head><title>Página Inicial</title></head><style type="text/css">body {font-family:sans-serif;text-align:center;}a{text-decoration:none;color:white;background-color:#121212; border-radius:1rem;width:30%;line-height:40px;}a:hover{background-color:#bd1919;transition: 500ms;}.container{display:flex;flex-direction:column;justify-items:center;align-items:center} .nomes{font-weight: bold;font-size:20px;}</style>  <div class="container"> <h1>Página Inicial</h1><a href="https://Trabalho-Final-5.igorsantanasant.repl.co/autores">Autores</a><br><a href="https://Trabalho-Final-5.igorsantanasant.repl.co/livros">Livros</a><p class="nomes">Igor Vinicius de Souza Santana & André Luís Souza Lopes</p>');
+res.json('Biblioteca IRD - API');
 
 });
 
